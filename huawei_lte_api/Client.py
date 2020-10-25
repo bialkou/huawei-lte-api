@@ -64,6 +64,7 @@ from huawei_lte_api.api.Statistic import Statistic
 from huawei_lte_api.api.TimeRule import TimeRule
 from huawei_lte_api.api.Bluetooth import Bluetooth
 from huawei_lte_api.api.MLog import MLog
+from huawei_lte_api.api.Ussd import Ussd
 
 
 class Client:
@@ -133,3 +134,4 @@ class Client:
         self.timerule = TimeRule(connection)
         self.bluetooth = Bluetooth(connection)
         self.mlog = MLog(connection)
+        self.ussd = Ussd(connection)
